@@ -8,7 +8,6 @@ def gaussian(x, mean, var):
     """
     return np.exp((-0.5*(x-mean)**2)/var) / np.sqrt(2*np.pi*var)
 
-
 for x in range(12, 32):
     f = gaussian(x, 22, 4)
     plt.plot(x, f, 'o')
